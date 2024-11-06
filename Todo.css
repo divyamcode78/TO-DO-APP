@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.mainDiv{
+    background-color: #f20707;
+    padding-bottom: 30px;
+}
+
+div.mainHeading{
+    text-align: center;
+    & H1{
+        color: whitesmoke;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+}
+
+div.InputandButton{
+    text-align: center;
+    display: flex;
+    padding: 0 10%;
+    & input{
+        width: 50%;
+        height: 33px;
+        padding-left: 5px;
+        margin: 0;
+        border: 0;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    & input:focus{
+        outline: none;
+    }
+    & button{
+        width: 50%;
+        height: 33px;
+        margin: 0;
+        font-size: 16px;
+        background: #000000;
+        color: #ffffff;
+        font-weight: 500;
+        font-style: italic;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+        border: 0;
+    }
+}
+
+p.ErrorMessage{
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 20px 0 0 0;
+}
+
+ul.initialTodoStart
+{
+    & li.ListItem_forToDo{
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: #eee;
+        font-size: 18px;
+        transition: 0.2s;
+      
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    & li.ListItem_forToDo:nth-child(odd) {
+      background: #f9f9f9;
+    }
+    
+    /* Darker background-color on hover */
+    & li.ListItem_forToDo:hover {
+      background: #ddd;
+    }
+
+    & li.ListItem_forToDo_checked{
+        text-decoration: line-through;
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        background: #888;
+        color: whitesmoke;
+        font-size: 18px;
+        transition: 0.2s;
+      
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    & button.closeButton{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 16.5px 16px;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    & button.closeButton:hover{
+        background-color: #f44336;
+        color: white
+    }
+}
+/* .check-mark{
+    position: relative;
+    float: left;
+    padding-right: 20px;
+} */
+.check-mark{
+    float: left;
+    padding-right: 20px;
+}
+li.ListItem_forToDo_checked
+{
+    background-color: #888;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    width: 25%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
